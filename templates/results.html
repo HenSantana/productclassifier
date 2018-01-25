@@ -1,0 +1,21 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>Classificação de Produto</title>
+                <link rel="stylesheet"
+                href="{{ url_for('static', filename='style.css') }}">
+        </head>
+    <body>
+        <h3>URL informada:</h3>
+        <div>{{ content }}</div>
+        <h3>Título do produto:</h3>
+        <div>{{ product }}</div>
+        <h3>Classificação:</h3>
+        <div>O produto é da categoria <strong>{{ prediction }}</strong> </div>
+        <div id='button'>
+            <form action="/">
+            <input type=submit value='Classifique outro produto'>
+            </form>
+        </div>
+    </body>
+</html>
